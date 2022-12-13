@@ -5,7 +5,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://sendemail-api-ftgd.onrender.com",
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.30",
     "@amcharts/amcharts5": "^5.2.38",

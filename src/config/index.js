@@ -9,7 +9,7 @@ const isLocalhost = Boolean (
     )
 );
 
-export const SERVER_URL = isLocalhost ? "http://localhost:5000/":"https://api-atul.herokuapp.com/"
+export const SERVER_URL = isLocalhost ? "http://localhost:5000/":"https://sendemail-api-ftgd.onrender.com"
 
 
 
