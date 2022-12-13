@@ -1,13 +1,13 @@
 import axios from "axios"
 
-const isLocalhost = Boolean (
-    window.location.hostname ==='localhost' ||
-    // [::1] is the localhost adress
-    window.location.hostname === '[::1]' ||
-    window.location.hostname.match(
-        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-    )
-);
+// const isLocalhost = Boolean (
+//     window.location.hostname ==='localhost' ||
+//     // [::1] is the localhost adress
+//     window.location.hostname === '[::1]' ||
+//     window.location.hostname.match(
+//         /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+//     )
+// );
 
 export const SERVER_URL = "https://sendemail-api-ftgd.onrender.com"
 

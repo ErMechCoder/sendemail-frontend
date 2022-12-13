@@ -259,9 +259,9 @@ const Home=()=> {
           ))}
         </Box> }
 
-        <Box sx={{ flexGrow: 0 }} style={{marginLeft:'95%'}}>
-          <Tooltip title="Open settings">
-            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+        <Box sx={{ flexGrow: 0 }} >
+          <Tooltip title="Open settings" >
+            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}style={{marginLeft:570}}>
               <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=400" />
             </IconButton>
           </Tooltip>
