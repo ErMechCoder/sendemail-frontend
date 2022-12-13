@@ -18,8 +18,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";//
 //import DarkModeTwoToneIcon from "@mui/icons-material/DarkModeTwoTone";
 import { Link } from "react-router-dom";
-import { Avatar, Button, Menu, MenuItem } from "@mui/material";
-import Tooltip from '@mui/material/Tooltip';
+import { Avatar, Button } from "@mui/material";
+//import Tooltip from '@mui/material/Tooltip';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
@@ -27,7 +27,7 @@ const drawerWidth = 240;
 
 
 const pages = ['HOME', 'BLOG','CONTACT',' RESEARCH'];
-const settings = [ 'Dashboard', 'Logout'];
+//const settings = [ 'Dashboard', 'Logout'];
 
 
 const logo = {
@@ -109,23 +109,23 @@ const Home=()=> {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+ const [anchorElNav, setAnchorElNav] = React.useState(null);
+  //const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
 
 
@@ -189,63 +189,7 @@ const Home=()=> {
           EmailBuilder
         </Typography>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-          >
       
-         <Avatar sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}  alt="Remy Sharp" src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=400" />
-          </IconButton>
-          { <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: 'block', md: 'none' },
-            }}
-          >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-           
-                <Typography textAlign="center"   >{page}</Typography>
-              </MenuItem>
-            ))}
-          </Menu> }
-        </Box>
-
-        <Typography
-          variant="h5"
-          noWrap
-          component="a"
-          href=""
-          sx={{
-            mr: 2,
-            display: { xs: 'flex', md: 'none' },
-            flexGrow: 1,
-            fontFamily: 'monospace',
-            fontWeight: 900,
-            letterSpacing: '.3rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}
-        >
-          EmailBuilder
-        </Typography>
         { <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} >
           {pages.map((page) => (
             <Button
@@ -259,35 +203,7 @@ const Home=()=> {
           ))}
         </Box> }
 
-        <Box sx={{ flexGrow: 0 }} >
-          <Tooltip title="Open settings" >
-            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}style={{marginLeft:570}}>
-              <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=400" />
-            </IconButton>
-          </Tooltip>
-          <Menu
-            sx={{ mt: '45px' }}
-            id="menu-appbar"
-            anchorEl={anchorElUser}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorElUser)}
-            onClose={handleCloseUserMenu}
-          >
-            {settings.map((setting) => (
-              <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                <Typography textAlign="center">{setting}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
-        </Box>
+        
       </Toolbar>
         </Toolbar>
       </AppBar>
