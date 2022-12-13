@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+.emaileditor{
+  width: auto;
+  height: auto;
+  margin-bottom: 10%;
+}
+.App-header{
+  height: 10vh;
+  text-align: center;
+  color:'white';
+  font-size: 2rem;
+  padding-top: 5px;
+  font-weight: 700;
+}
+
+#editor_container{
+  height: 90vh;
+}
+
+.export_button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* chart container page css*/
+.chartcontainer{
+  width: 80%;
+  height: auto;
+  background-color:#e4e4ed;
+  margin: auto;
+  margin-left: 15%;
+}
