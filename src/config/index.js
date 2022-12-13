@@ -9,7 +9,7 @@ import axios from "axios"
 //     )
 // );
 
-export const SERVER_URL = "https://sendemail-api-ftgd.onrender.com"
+export const SERVER_URL = "https://sendemail-api-ftgd.onrender.com/"
 
 
 
